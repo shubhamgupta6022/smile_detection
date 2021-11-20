@@ -4,7 +4,7 @@ smile_cascade=cv2.CascadeClassifier("haarcascade_smile.xml")
 
 class VideoCamera(object):
     def __init__(self):
-        self.video=cv2.VideoCapture(0)
+        self.video=cv2.VideoCapture(1)
 
     def __del__(self):
         self.video.releast()
